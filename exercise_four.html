@@ -31,7 +31,7 @@
         var crying = false;
         */
         
-        
+        /*
         //Player Two
         var score = 394;
         var last_play = "W";
@@ -39,9 +39,9 @@
         var has_ball = true;
         var is_in_tree = true;
         var crying = false;
+        */
         
         
-        /*
         //Player Three
         var score = "f";
         var last_play = 1.5;
@@ -49,11 +49,11 @@
         var has_ball = true;
         var is_in_tree = false;
         var crying = true;
-        */
+        
         
         //one
         if (typeof(score) != "number") {
-            score=score+500;
+            score=500;
             console.log(score);
         }
         //two
@@ -71,7 +71,7 @@
             console.log(score);
         }
         //four
-        if (is_in_tree && typeof(last_play) == "number"){ 
+        if (is_in_tree && typeof(last_play) !="number"){ 
             score=score+395;
             console.log(score);
         }
@@ -89,15 +89,16 @@
             console.log(score);
         }
         //six
-        if ((has_ball) && typeof(is_in_tree=false) && typeof(crying=false)){
+        if ((has_ball) && (is_in_tree==false) && (crying==false)){
             score=score*1.5;
             console.log(score);
         }
         //seven
-        if (typeof(last_play)=="number" && typeof(last_play)!="letter"){
-            score=score*"number";
+        if (typeof(last_play)=="number"){
+            score=score*last_play;
             console.log(score);
         }
+        console.log(score);
 
 
 
